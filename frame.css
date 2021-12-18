@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&display=swap');
+.toggle{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    cursor: pointer;
+    overflow: hidden;
+}
+.toggle span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: #1863ff;
+    border-radius: 4px;
+    transition: .5s;
+}
+.toggle span:nth-child(1){
+    width: 25px;
+    right: 15px;
+    transform: translateY(-15px);
+}
+.toggle span:nth-child(2){
+    width: 15px;
+    right: 15px;
+    transform: translateY(15px);
+}
+.toggle.active span:nth-child(3){
+    transform: translateX(-60px);
+}
+
+.toggle.active span:nth-child(1){
+    transform: translateY(0px) rotate(45deg);
+    width: 40px;
+    transition-delay: 0.125s;
+}
+.toggle.active span:nth-child(2){
+    transform: translateY(0px) rotate(315deg);
+    width: 40px;
+    transition-delay: 0.25s;
+}
+
+
+.list {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    margin-left: 5px;
+    border-radius: 5px;
+
+}
+.rg{
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+.visible{
+    opacity: 1;
+    visibility: visible;
+}
+.des h2{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 3px 5px #fff;
+    margin-bottom: 1rem;
+    color: #1863ff;
+}
+.des p {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    color: #023e8a;
+}
+
+.des span{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.des ul {
+    list-style: none;
+}
+.des ul li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    color: #03045e;
+}
